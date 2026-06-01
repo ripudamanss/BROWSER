@@ -375,15 +375,7 @@ class Browser(QMainWindow):
         if url not in self.history:
             self.history.append(url)
             self.history.sort()
-        # if url is None:
-        #     url = self.address_bar.text()
-        # if not url.startswith("http://") and not url.startswith("https://"):
-        #     url = "https://" + url
-
-        # current_webview = self.tab_widget.currentWidget()
-        # if isinstance(current_webview, QWebEngineView):
-        #     current_webview.setUrl(QUrl(url))
-
+            
         # Add to history
         if url not in self.history:
             self.history.append(url)
